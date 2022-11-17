@@ -41,6 +41,7 @@ module "blog_sg" {
   egress_cidr_blocks = ["0.0.0.0/0"]
 }
 
+/*   replaced with above module
 resource "aws_security_group" "blog"{
   name        = "blog"
   description = "Allow http https in everything out"
@@ -75,3 +76,4 @@ resource "aws_security_group_rule" "blog_everything_out"{
 
   security_group_id = aws_security_group.blog.id
 }
+*/
